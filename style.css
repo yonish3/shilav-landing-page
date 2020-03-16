@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
-
+/* 
 @media only screen and (max-width: 1000px) {
     form {
         margin-right:0px;
         
     }
-  }
+  } */
 
 body {
   /* background-color: #efefef; */
@@ -13,6 +13,7 @@ body {
   font-size: 100%;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
+  direction: rtl;
 }
 
 form {
@@ -32,7 +33,7 @@ fieldset {
   padding: 40px;
   font-size: 15px;
   color: black;
-  direction: rtl;
+  /* direction: rtl; */
   
 }
 
@@ -120,6 +121,25 @@ form input.submit:hover {
 	background: -o-linear-gradient(#9e2f2f, #9e2f2f);	
 	background: -ms-linear-gradient(#9e2f2f, #9e2f2f);	
 	background: linear-gradient(#9e2f2f, #9e2f2f);	
+}
+
+#smallSubmit{
+  max-width: 10vh;
+}
+
+#mediumSbmit{
+  max-width: 40vh;
+
+}
+
+/* fieldset > div{
+  display: grid;
+  justify-items: center;
+} */
+
+.notGrid{
+  display: inline-block;
+  margin-right: 55px;
 }
 
 /* check box */
@@ -226,8 +246,8 @@ form input.submit:hover {
         padding: 0;
         display: block;
         margin: 10px ;
-        max-height: 30vh;
-        max-width: 30vh;
+        max-height: 25vh;
+        max-width: 25vh;
     }
 
     div.contentContainer > img  {
@@ -250,11 +270,10 @@ form input.submit:hover {
         display: grid;
         justify-items: center;
         justify-content: center;
-        direction: rtl;
+        /* direction: rtl; */
     }
 
     span{
-    
     color: #333333;
     font-size: 18px;
     /* font-weight: bold; */
@@ -263,3 +282,5 @@ form input.submit:hover {
     border-radius: 0px;
     background-color: #ffffff;
     }
+
+    

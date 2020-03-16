@@ -1,0 +1,13 @@
+body{
+    direction: rtl;
+}
+
+/* body {
+    text-align: center;
+} */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
