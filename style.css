@@ -47,7 +47,7 @@ form label {
   font-size: 1em;
   /* line-height: 40px; */
   color: #111;
-  display: block;
+  /* display: block; */
   width: 70%;
 }
 /* 
@@ -67,7 +67,7 @@ form input, form select {
 	/* padding: 0 10px; */
 	/* width: 240px; */
     vertical-align: middle;
-    width: 80%;  
+    width: 100%;  
     margin-top: 6px; 
 }
 
@@ -125,10 +125,12 @@ form input.submit:hover {
 
 #smallSubmit{
   max-width: 10vh;
+  margin: auto;
 }
 
 #mediumSbmit{
   max-width: 40vh;
+  margin: auto;
 
 }
 
