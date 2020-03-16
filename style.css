@@ -239,12 +239,11 @@ form input.submit:hover {
      .catalogContainer{
          display: grid;
          justify-items: center;
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-columns: minmax(100px, 250px) minmax(100px, 250px);
          justify-content: center;
      }
 
-     div.catalogContainer > img  {
+     div.catalogContainer > img , div.catalogContainer > div {
         padding: 0;
         display: block;
         margin: 10px ;
@@ -260,13 +259,13 @@ form input.submit:hover {
         max-width: 50vh;
     }
     
-
+/* 
     .leftCol{
         justify-self: end;
     }
     .rightCol{
         justify-self: start;
-    }
+    } */
 
     .contentContainer{
         display: grid;
@@ -285,4 +284,29 @@ form input.submit:hover {
     background-color: #ffffff;
     }
 
+    .catalogTitle{
+      /* font-size: 18px; */
+      display: block;
+      line-height: normal;
+      font-weight: bold;
+      text-align: center;
+      /* font-family: 'PT Sans Caption', sans-serif; */
+      /* color: #333333; */
+    }
+
+    .catalogText{
+      display: block;
+      font-size: 16px;
+      color: rgb(83, 81, 81);
+    }
+
+    .footer{
+      color: rgb(83, 81, 81);
+      text-align: center;
+    }
+
+    .footer > span{
+      font-size: 12px;
+
+    }
     
