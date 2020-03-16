@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
-
+/* 
 @media only screen and (max-width: 1000px) {
     form {
         margin-right:0px;
         
     }
-  }
+  } */
 
 body {
   /* background-color: #efefef; */
@@ -13,6 +13,7 @@ body {
   font-size: 100%;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
+  direction: rtl;
 }
 
 form {
@@ -32,7 +33,7 @@ fieldset {
   padding: 40px;
   font-size: 15px;
   color: black;
-  direction: rtl;
+  /* direction: rtl; */
   
 }
 
@@ -46,7 +47,7 @@ form label {
   font-size: 1em;
   /* line-height: 40px; */
   color: #111;
-  display: block;
+  /* display: block; */
   width: 70%;
 }
 /* 
@@ -66,7 +67,7 @@ form input, form select {
 	/* padding: 0 10px; */
 	/* width: 240px; */
     vertical-align: middle;
-    width: 80%;  
+    width: 100%;  
     margin-top: 6px; 
 }
 
@@ -120,6 +121,27 @@ form input.submit:hover {
 	background: -o-linear-gradient(#9e2f2f, #9e2f2f);	
 	background: -ms-linear-gradient(#9e2f2f, #9e2f2f);	
 	background: linear-gradient(#9e2f2f, #9e2f2f);	
+}
+
+#smallSubmit{
+  max-width: 10vh;
+  margin: auto;
+}
+
+#mediumSbmit{
+  max-width: 40vh;
+  margin: auto;
+
+}
+
+/* fieldset > div{
+  display: grid;
+  justify-items: center;
+} */
+
+.notGrid{
+  display: inline-block;
+  margin-right: 55px;
 }
 
 /* check box */
@@ -217,17 +239,16 @@ form input.submit:hover {
      .catalogContainer{
          display: grid;
          justify-items: center;
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-columns: minmax(100px, 250px) minmax(100px, 250px);
          justify-content: center;
      }
 
-     div.catalogContainer > img  {
+     div.catalogContainer > img , div.catalogContainer > div {
         padding: 0;
         display: block;
         margin: 10px ;
-        max-height: 30vh;
-        max-width: 30vh;
+        max-height: 25vh;
+        max-width: 25vh;
     }
 
     div.contentContainer > img  {
@@ -238,23 +259,22 @@ form input.submit:hover {
         max-width: 50vh;
     }
     
-
+/* 
     .leftCol{
         justify-self: end;
     }
     .rightCol{
         justify-self: start;
-    }
+    } */
 
     .contentContainer{
         display: grid;
         justify-items: center;
         justify-content: center;
-        direction: rtl;
+        /* direction: rtl; */
     }
 
     span{
-    
     color: #333333;
     font-size: 18px;
     /* font-weight: bold; */
@@ -263,3 +283,30 @@ form input.submit:hover {
     border-radius: 0px;
     background-color: #ffffff;
     }
+
+    .catalogTitle{
+      /* font-size: 18px; */
+      display: block;
+      line-height: normal;
+      font-weight: bold;
+      text-align: center;
+      /* font-family: 'PT Sans Caption', sans-serif; */
+      /* color: #333333; */
+    }
+
+    .catalogText{
+      display: block;
+      font-size: 16px;
+      color: rgb(83, 81, 81);
+    }
+
+    .footer{
+      color: rgb(83, 81, 81);
+      text-align: center;
+    }
+
+    .footer > span{
+      font-size: 12px;
+
+    }
+    
